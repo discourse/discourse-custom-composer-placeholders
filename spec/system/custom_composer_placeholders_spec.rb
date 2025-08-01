@@ -3,7 +3,7 @@ RSpec.describe "Custom Composer Placeholders", system: true do
   let!(:theme) { upload_theme_component }
 
   fab!(:user) { Fabricate(:user, refresh_auto_groups: true) }
-  fab!(:category) { Fabricate(:category) }
+  fab!(:category)
   fab!(:subcategory) { Fabricate(:category, parent_category_id: category.id) }
   fab!(:other_category) { Fabricate(:category) }
 
