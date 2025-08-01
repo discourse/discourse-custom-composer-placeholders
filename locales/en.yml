@@ -1,0 +1,5 @@
+en:
+  theme_metadata:
+    description: Add custom placeholder text for the composer
+    settings:
+      example_setting: A description of a setting.
