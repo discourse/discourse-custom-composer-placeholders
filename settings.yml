@@ -1,2 +1,22 @@
-example_setting:
+placeholder_configurations:
+  type: objects
+  default: []
+  schema:
+    name: placeholder
+    identifier: "category_id"
+    properties:
+      category_id:
+        type: categories
+        required: true
+      topic_placeholder:
+        type: string
+        validations:
+          max_length: 2000
+      reply_placeholder:
+        type: string
+        validations:
+          max_length: 2000
+
+inherit_parent_placeholders:
+  type: bool
   default: true

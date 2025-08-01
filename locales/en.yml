@@ -1,5 +1,19 @@
 en:
   theme_metadata:
-    description: Add custom placeholder text for the composer
+    description: "Configure custom placeholders for the composer based on category"
     settings:
-      example_setting: A description of a setting.
+      placeholder_configurations:
+        schema:
+          name: "Placeholder Configuration"
+          properties:
+            category_id:
+              label: "Category"
+              description: "The category this placeholder configuration applies to"
+            topic_placeholder:
+              label: "Topic Placeholder"
+              description: "The placeholder text shown when creating a new topic in this category"
+            reply_placeholder:
+              label: "Reply Placeholder"
+              description: "The placeholder text shown when replying to a topic in this category"
+      inherit_parent_placeholders:
+        description: "Allow child categories to inherit placeholder text from their parent category if not explicitly configured"
